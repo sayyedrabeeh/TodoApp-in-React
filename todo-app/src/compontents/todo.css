@@ -1,0 +1,155 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; 
+    color: #e0e0e0; 
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #1e1e1e; 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #66bb6a; 
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+.form1 {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #66bb6a; 
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #2c2c2c; 
+    color: #ffffff; 
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #4caf50; 
+    outline: none;
+}
+
+button {
+    background-color: #66bb6a; 
+    color: white;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #4caf50; 
+    transform: translateY(-2px);
+}
+
+
+.list {
+    margin-top: 30px;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #2a2a2a; 
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #3a3a3a; 
+}
+
+.list-item-list {
+    flex: 1;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#list-item {
+    text-decoration: line-through;
+    color: #ccc;
+    opacity: 0.3;
+}
+
+.list-item-icons {
+    display: flex;
+    gap: 15px; 
+    cursor: pointer;
+}
+
+.list-item-icons .list-item-icons {
+    padding: 5px;
+    font-size: 24px; 
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.list-item-icons .list-item-icons:hover {
+    transform: scale(1.2);
+}
+
+#complete {
+    color: #4caf50; 
+}
+
+#edit {
+    color: #ffc107; 
+}
+
+#delete {
+    color: #f44336;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 28px; 
+    }
+
+    .form1 {
+        flex-direction: column;
+    }
+
+    input {
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
